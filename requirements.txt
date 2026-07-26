@@ -1,0 +1,8 @@
+streamlit
+langchain
+langchain-community
+langchain-aws
+psycopg2-binary
+boto3
+pypdf
+python-docx
