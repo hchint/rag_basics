@@ -2,7 +2,7 @@ import os
 import streamlit as st
 import boto3
 from langchain_aws import ChatBedrock
-from langchain_aws import AmazonKnowledgeBasesReriever
+from langchain_aws import AmazonKnowledgeBasesRetriever
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConvertsationBufferWindowMemory
 
