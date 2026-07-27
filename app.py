@@ -70,7 +70,7 @@ def get_chain(memory):
 
 st.set_page_config(
     page_title="knwoledge Base Chatbot",
-    page_icon=":)"
+    page_icon=":robot_face:",
     layout="wide",
 )
 
