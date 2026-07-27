@@ -32,7 +32,7 @@ def get_llm():
 @st.cache_resource
 def get_retriever():
     """Initialize Bedrock KNowledge Base Retriever (Aurora Vector DB backed)."""
-    return AmazonKnowledgeBaseRetriver(
+    return AmazonKnowledgeBasesRetriever(
         knowledge_base_id=KNOWLEDGE_BASE_ID,
         region_name=AWS_REGION,
         retrieval_config={
