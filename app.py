@@ -4,7 +4,7 @@ import boto3
 from langchain_aws import ChatBedrock
 from langchain_aws import AmazonKnowledgeBasesRetriever
 from langchain.chains import ConversationalRetrievalChain
-from langchain.memory import ConvertsationBufferWindowMemory
+from langchain.memory import ConversationBufferWindowMemory
 
 AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
 KNOWLEDGE_BASE_ID = os.getenv("KNOWLEDGE_BASE_ID", "BLQQSKMUC8")
