@@ -25,7 +25,7 @@ retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 # LLM
 llm = ChatBedrock(
     model_id="amazon.nova-pro-v1:0",
-    region_name=os.getenv("BEDROCK_REGION")
+    region=os.getenv("BEDROCK_REGION")
 )
 
 st.title("🔐 Nexus Security Policy Chatbot")
