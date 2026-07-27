@@ -19,7 +19,7 @@ TOP_K_RESULTS = int(os.getenv("TOP_K_RESULTS", "5"))
 
 @st.cache_resource
 def get_llm():
-    """Intitalize Amazon Bedrock Model via Bedrock""""
+    """Intitalize Amazon Bedrock Model via Bedrock"""
     return ChatBedrock(
         model_id= MODEL_ID,
         region_name=AWS_REGION,
