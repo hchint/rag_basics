@@ -7,7 +7,7 @@ from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConvertsationBufferWindowMemory
 
 AWS_REGION = os.getenv("AWS_REGION", "us-east-1")
-KNOWLEDGE_BASE_ID = os.getenv("KNOWLEDGE_BASE_ID", "your-knowledge-base-id")
+KNOWLEDGE_BASE_ID = os.getenv("KNOWLEDGE_BASE_ID", "BLQQSKMUC8")
 MODEL_ID = os.getenv("MODEL_ID", "amazon.nova-pro-v1:0")
 MAX_TOKENS = int(os.getenv("MAX_TOKENS", "1024"))
 TEMPRATURE = float(os.getenv("TEMPRATURE", "0.3"))
@@ -71,7 +71,7 @@ def get_chain(memory):
 st.set_page_config(
     page_title="knwoledge Base Chatbot",
     page_icon=":)"
-    layout="wide"
+    layout="wide",
 )
 
 st.title("Chat with Your Knowledge Base")
