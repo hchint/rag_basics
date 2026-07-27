@@ -44,7 +44,7 @@ def get_retriever():
 
 def get_memory():
     """Conversation Memory - keeps last 5 exchanges for context."""
-    return ConvertsationBufferWindowMemory(
+    return ConversationBufferWindowMemory(
         memory_key="chat_history", 
         return_messages=True,
         output_key="answer",
@@ -54,7 +54,7 @@ def get_memory():
 def get_chain(memory):
     """ Build the conversational retrieval chain"""
     llm = get_llm()
-    retriever = get_retreiver()
+    retriever = get_retriever()
     chain = ConversationalRetrievalChain.from_llm(
         llm=llm,
         retriever=retriever,
